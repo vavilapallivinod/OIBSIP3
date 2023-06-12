@@ -1,0 +1,116 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 10px;
+  background-image: url("https://media.istockphoto.com/id/1043725222/photo/office-desk-with-coffee-cup-cactus-pot-and-blank-notebook.jpg?s=612x612&w=0&k=20&c=xXopDTvwcq07CSnTiBpf5etxtgNhF_ULu1ptCi1rfwU=");   
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+
+h1 {
+  margin-left:500px;
+  color: #333;
+  font-weight: bold;
+}
+
+.add-task {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-left: 450px;
+  margin-right: auto;
+  background-color:black;
+  border-radius: 20px;
+  box-shadow: 1px 2px 1px inset grey;
+  width: min-content;
+  padding: 20px;
+  border:2px solid black;
+}
+
+.add-task input[type="text"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  border: 2px solid steelblue;
+}
+
+.add-task input[type="datetime-local"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 0 5px 5px 0;
+  border: 2px solid steelblue;
+}
+
+.add-task button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-task button:hover {
+  background-color:blue;
+}
+
+.tasks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tasks .task-list {
+  background-color: #f8f8f8;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  margin: 10px;
+}
+
+.tasks .task-list.completed {
+  background-color: grey;
+}
+
+.tasks h2 {
+  margin-bottom: 10px;
+  margin-left: -170px;
+  color: #1a166e;
+}
+
+.tasks ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.tasks li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 5px;
+  justify-content: space-between;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+}
+
+.tasks .task-item {
+  flex-grow: 0;
+  margin-right: 10px;
+}
+
+.tasks .task-item.completed {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.tasks .task-item .task-actions {
+  display: flex;
+  align-items: center;
+}
+
+
+
